@@ -1,0 +1,15 @@
+services:
+  api_gateway:
+    build: .
+    container_name: api_gateway
+    ports:
+      - "5000:5000"
+    environment:
+      - BACKEND_SERVICES=http://api_catalog:3000
+      - PORT=5000
+    networks:
+      - microservices-network
+
+networks:
+  microservices-network:
+    name: microservices-network
