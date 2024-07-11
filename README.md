@@ -50,7 +50,7 @@ python3 app.py
 Execute o arquivo docker-compose.yml no diretório raiz do projeto 
 
 ```
-docker compose up -d
+docker compose -f "docker-compose.yml" up -d --build
 ```
 
 - Acesse a documentação da API:
