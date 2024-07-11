@@ -45,6 +45,14 @@ python3 app.py
 
 ### 1.2. Para executar com o docker ###
 **Construa e inicie os contêineres:**
+
+- Inicie os serviços do Docker com Docker Compose:
+Execute o arquivo docker-compose.yml no diretório raiz do projeto 
+
 ```
-docker-compose up --build
+docker compose up -d
 ```
+
+- Acesse a documentação da API:
+Acesse o Swagger UI para visualizar e testar a API em http://localhost:5000/openapi/swagger.
+
