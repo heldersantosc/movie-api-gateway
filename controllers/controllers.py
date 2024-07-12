@@ -88,7 +88,7 @@ def replace_filme(path: FilmeId, body: Filme):
         filme_data = body.model_dump()
         result = filme_service.replace_filme(filme_id, filme_data)
         logger.info(f"Filme com ID {filme_id} substituído com sucesso")
-        return jsonify(Filme(**result["value"]).model_dump()), 200
+        return jsonify(result), 200
     except Exception as e:
         logger.error(f"Erro ao atualizar o filme com ID {filme_id}: {e}")
         return jsonify({"error": "Ocorreu um erro ao substituir o filme"}), 500
@@ -110,7 +110,7 @@ def update_filme(path: FilmeId, body: FilmeUpdateParcial):
         filme_data = body.model_dump()
         result = filme_service.update_filme(filme_id, filme_data)
         logger.info(f"Filme com ID {filme_id} atualizado com sucesso")
-        return jsonify(result["value"]), 200
+        return jsonify(result), 200
     except Exception as e:
         logger.error(f"Erro ao atualizar parcialmente o filme com ID {filme_id}: {e}")
         return jsonify({"error": "Ocorreu um erro ao atualizar o filme"}), 500
