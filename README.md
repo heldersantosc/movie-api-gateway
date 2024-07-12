@@ -56,3 +56,5 @@ docker compose -f "docker-compose.yml" up -d --build
 - Acesse a documentação da API:
 Acesse o Swagger UI para visualizar e testar a API em http://localhost:5000/openapi/swagger.
 
+## 1.3. Arquitura dos serviços ##
+![Arquitetura de serviços](./docs/arquitetura.jpg)
