@@ -1,4 +1,8 @@
 # API Gateway de Catálogo de Filmes
+**Componente de Principal REST**
+
+Esta é uma API Gateway de Catálogo Filmes que permite listar filmes populares do TMDB, adicionar filmes favoritos, atualizar informações de filmes, deletar filmes e listar seus filmes favoritos.
+
 Esta API Gateway serve como ponto de entrada para o serviço de catálogo de filmes, gerenciando requisições e roteando-as para os microserviços apropriados.
 
 ## Instruções de Instalação
